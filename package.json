@@ -1,0 +1,19 @@
+{
+  "name": "feedback-collection-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heminjohnson/Feedback-Collection-App.git"
+  },
+  "author": "Hemin Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heminjohnson/Feedback-Collection-App/issues"
+  },
+  "homepage": "https://github.com/heminjohnson/Feedback-Collection-App#readme"
+}

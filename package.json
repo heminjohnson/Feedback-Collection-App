@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/heminjohnson/Feedback-Collection-App/issues"
   },
-  "homepage": "https://github.com/heminjohnson/Feedback-Collection-App#readme"
+  "homepage": "https://github.com/heminjohnson/Feedback-Collection-App#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }

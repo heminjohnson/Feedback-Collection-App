@@ -1,0 +1,26 @@
+{
+  "name": "feedback-collection-app",
+  "version": "1.0.0",
+  "description": "",
+	"main": "index.js",
+	"engines": {
+		"node": "11.6.0",
+		"npm": "6.5.0"
+	},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heminjohnson/Feedback-Collection-App.git"
+  },
+  "author": "Hemin Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heminjohnson/Feedback-Collection-App/issues"
+  },
+  "homepage": "https://github.com/heminjohnson/Feedback-Collection-App#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

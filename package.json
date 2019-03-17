@@ -2,13 +2,14 @@
   "name": "feedback-collection-app",
   "version": "1.0.0",
   "description": "",
-	"main": "index.js",
-	"engines": {
-		"node": "11.6.0",
-		"npm": "6.5.0"
-	},
+  "main": "index.js",
+  "engines": {
+    "node": "11.6.0",
+    "npm": "6.5.0"
+  },
   "scripts": {
-    "start": "node index.js"
+		"start": "node index.js",
+		"dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,11 @@
   },
   "homepage": "https://github.com/heminjohnson/Feedback-Collection-App#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }

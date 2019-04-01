@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/heminjohnson/Feedback-Collection-App#readme",
   "dependencies": {
+    "cookie-session": "^1.3.3",
     "express": "^4.16.4",
     "mongoose": "^5.4.20",
     "passport": "^0.4.0",

@@ -25,7 +25,12 @@ module.exports = app => {
       }
     })
 
-    console.log(events)
+    const compactEvents = _.compact(events) // This excludes undefined values
+    const uniqueEvents = _.uniqBy(compactEvents, 'email')
+
+    console.log(uniqueEvents)
+
+    res.send({})
   })
 
   app.post('/api/surveys', requireLogin, requireCredits, async (req, res) => {

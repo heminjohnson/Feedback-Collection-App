@@ -11,11 +11,12 @@ const surveyTemplates = require('../services/emailTemplates/surveyTemplate')
 const Survey = mongoose.model('surveys')
 
 module.exports = app => {
-  app.get('/api/surveys/thanks', (req, res) => {
+  app.get('/api/surveys/:surveyId/:choice', (req, res) => {
     res.send('Thanks for voting')
   })
 
   app.post('/api/surveys/webhooks', (req, res) => {
+    const p = new Path('/api/surveys/:surveyId/:choice')
 
     _.chain(req.body)
       .map(({email, url}) => {
@@ -34,8 +35,9 @@ module.exports = app => {
           }
         }, {
           $inc: { [choice]: 1 }, // increment choice with one
-          $set: { 'recipients.$.responded': true } // update the recipient value returned from the above
-        })
+          $set: { 'recipients.$.responded': true }, // update the recipient value returned from the above
+          lastResponded: new Date()
+        }).exec()
       })
       .value()
 
